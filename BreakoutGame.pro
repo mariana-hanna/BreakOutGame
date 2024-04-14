@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     Ball.cpp \
     Game.cpp \
+    block.cpp \
     main.cpp
 
 HEADERS += \
     Ball.h \
-    Game.h
+    Game.h \
+    block.h
 
 FORMS +=
 
