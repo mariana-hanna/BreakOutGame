@@ -7,7 +7,7 @@ class block: public QGraphicsRectItem
 {
 public:
     //contsructor
-    block (QGraphicsRectItem *parent= NULL);
+    block (QGraphicsItem *parent= NULL);
 };
 
 #endif // BLOCK_H

@@ -2,7 +2,7 @@
 #include<QBRush>
 
 //constructor definition
-block::block(QGraphicsRectItem *parent):QGraphicsRectItem(parent)
+block::block(QGraphicsItem *parent): QGraphicsRectItem(parent)
 {
     //to create rectangles (blocks)
     setRect(0,0,30,30);
