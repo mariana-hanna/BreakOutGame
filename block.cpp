@@ -13,5 +13,5 @@ block::block(QGraphicsRectItem *parent):QGraphicsRectItem(parent)
     brush.setColor(Qt::red);
     brush.setStyle(Qt:: SolidPattern);
     setBrush (brush);
-
 }
+
