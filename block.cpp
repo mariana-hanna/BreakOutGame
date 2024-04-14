@@ -1,6 +1,5 @@
 #include "block.h"
 #include<QBRush>
-#include<QGraphicsRectItem>
 
 //constructor definition
 block::block(QGraphicsRectItem *parent):QGraphicsRectItem(parent)

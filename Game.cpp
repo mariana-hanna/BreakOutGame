@@ -3,6 +3,8 @@
 #include"block.h"
 #include<block.cpp>
 
+
+//Game constructor
 Game::Game(QWidget *parent): QGraphicsView(parent)
 {
     // Set the size of the scene
@@ -13,6 +15,8 @@ Game::Game(QWidget *parent): QGraphicsView(parent)
     scene()->addItem(ball);
 }
 
+
+//Functions
 void Game::start()
 {
     ball->move();
