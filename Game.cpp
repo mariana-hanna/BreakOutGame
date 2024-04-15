@@ -9,7 +9,17 @@ Game::Game(QWidget *parent): QGraphicsView(parent)
 {
     // Set the size of the scene
     scene()->setSceneRect(0, 0, 800, 600);
+    QPixmap pixmap1("paddle.png");
+    pixmap1 = pixmap1.scaledToWidth(50);
+    pixmap1 = pixmap1.scaledToHeight(50);
 
+    // create an item to add to the scene
+    Paddle * player = new Paddle();
+    player->setPixmap(pixmap1);
+    player->setPos(400,550);
+    scene->addItem(player);
+    player->setFlag(QGraphicsItem::ItemIsFocusable);
+    player->setFocus();
     ball=new Ball();
 
     scene()->addItem(ball);
